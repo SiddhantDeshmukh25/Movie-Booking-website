@@ -1,0 +1,48 @@
+/* src/components/Home.css */
+.home {
+    background-color: #141414; /* Dark background similar to Netflix */
+    color: white;
+    padding: 20px;
+}
+
+.featured-movies {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.featured-movies h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.movie-list {
+    display: flex;
+    overflow-x: scroll; /* Horizontal scrolling for the movie list */
+    padding: 10px 0;
+}
+
+.movie-card {
+    margin-right: 10px; /* Spacing between movie cards */
+    flex: 0 0 auto; /* Prevent cards from shrinking */
+    transition: transform 0.2s; /* Animation on hover */
+}
+
+.movie-card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+.movie-card img {
+    width: 200px; /* Width of the movie poster */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+@media (max-width: 768px) {
+    .movie-card img {
+        width: 150px; /* Adjust poster size for smaller screens */
+    }
+}

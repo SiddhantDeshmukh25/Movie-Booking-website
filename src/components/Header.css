@@ -1,0 +1,35 @@
+/* src/components/Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #141414; /* Dark background similar to Netflix */
+    color: white; /* White text color */
+}
+
+.header__logo {
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header__nav {
+    display: flex;
+    gap: 20px; /* Space between nav items */
+}
+
+.header__nav span {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.header__nav span:hover {
+    color: #e50914; /* Change color on hover */
+}
+
+.header__search input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
