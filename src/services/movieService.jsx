@@ -9,7 +9,7 @@ export const fetchPopularMovies = async () => {
         const response = await axios.get(`${BASE_URL}/movie/popular?api_key=${API_KEY}&language=en-US&page=1`);
         return response.data.results; // Return the list of movies
     } catch (error) {
-        console.error('Error fetching movies:', error);
+        alert('Error fetching movies:', error);
         throw error; // Throw the error for further handling
     }
 };
