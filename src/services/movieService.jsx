@@ -32,3 +32,16 @@ export const fetchMovieDetails = async (id) => {
         throw error; // Handle the error appropriately
     }
 };
+// src/services/movieService.js
+
+// Add a new function to fetch movie videos
+export const fetchMovieVideos = async (id) => {
+    try {
+        const response = await axios.get(`${BASE_URL}/movie/${id}/videos?api_key=${API_KEY}&language=en-US`);
+        return response.data.results; // Return the list of videos (including trailers)
+    } catch (error) {
+        console.error('Error fetching movie videos:', error);
+        throw error; // Handle the error appropriately
+    }
+};
+

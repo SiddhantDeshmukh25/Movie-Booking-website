@@ -5,6 +5,7 @@ import Home from './components/Home';
 import MovieDetails from './components/MovieDetails';
 import Login from './components/Login';
 import Header from './components/Header';
+import WatchMovie from './components/WatchMovie';
 
 const App = () => {
     const [searchQuery, setSearchQuery] = useState('');
@@ -16,7 +17,8 @@ const App = () => {
                 <Route path="/" element={<Login />} />
                 <Route path="/home" element={<Home searchQuery={searchQuery} />} />
                 <Route path="/movie/:id" element={<MovieDetails />} />
-                {/* Add more routes as needed */}
+                
+                <Route path="/watch/:id" element={<WatchMovie />} /> {/* Add more routes as needed */}
             </Routes>
         </Router>
     );
