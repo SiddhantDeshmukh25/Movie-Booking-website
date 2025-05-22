@@ -1,7 +1,7 @@
 // src/services/movieService.js
 import axios from 'axios';
 
-const API_KEY = '4e4d012d6e1d50b1ac79947a5745ac04'; // Your TMDb API key
+const API_KEY = '4e4d012d6e1d50b1ac79947a5745ac04'; // my TMDb API key
 const BASE_URL = 'https://api.themoviedb.org/3';
 
 export const fetchPopularMovies = async () => {
