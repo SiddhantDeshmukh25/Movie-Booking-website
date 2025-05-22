@@ -15,7 +15,7 @@ const Header = ({ searchQuery, setSearchQuery }) => {
     return (
         <header className="header">
             <div className="header__logo" onClick={() => navigate('/')}>
-                MovieApp
+                MovieHub
             </div>
             <nav className="header__nav">
                 <span onClick={() => navigate('/home')}>Home</span>
